@@ -1,0 +1,26 @@
+# Core analysis (all parts)
+numpy
+pandas
+scipy
+statsmodels
+scikit-learn
+matplotlib
+tqdm
+
+# Generation under FP16 / INT8 (LLM.int8) / NF4 (bitsandbytes)
+torch
+transformers
+accelerate
+bitsandbytes
+huggingface_hub
+
+# LLM judge backends
+google-genai        # Gemini-2.5 Flash via Vertex AI / API key (Part 1 families + SmolLM2)
+google-auth
+openai              # OpenAI-compatible client used by the Granite judge (Part 2)
+
+# Kaggle-notebook helpers (only needed if you run on Kaggle)
+kagglehub
+ipywidgets
+# NOTE: versions are intentionally unpinned here. For the exact environments used in the study see
+# part2_granite_smollm/granite/requirements.txt and each family's environment snapshot in its release package.
