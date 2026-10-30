@@ -1,0 +1,5 @@
+field,n,judge_human_raw_agreement,cohens_kappa,kappa_note,label_used
+harmful_compliance,992,1.0,1.0,,judge-human agreement (single non-blinded annotator)
+refusal,992,1.0,1.0,,judge-human agreement (single non-blinded annotator)
+leak_after_refusal,992,1.0,1.0,,judge-human agreement (single non-blinded annotator)
+over_refusal,117,1.0,,not computed: one label has only a single class,judge-human agreement (single non-blinded annotator)

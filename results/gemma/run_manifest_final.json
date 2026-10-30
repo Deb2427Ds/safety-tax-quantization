@@ -1,0 +1,85 @@
+{
+  "experiment": "safety_tax_in_quantization",
+  "model_family": "Gemma-3-1B; Gemma-2-2B; Gemma-3-4B",
+  "created_at": "2026-08-01T02:51:56.900765+00:00",
+  "seed": 42,
+  "generation_hardware": "CPU",
+  "postprocessing_hardware": "CPU (Kaggle notebook, post-processing/statistics only)",
+  "precisions": [
+    "fp16",
+    "int8",
+    "nf4"
+  ],
+  "attacks": [
+    "direct",
+    "dan_template",
+    "roleplay_authority",
+    "hypothetical",
+    "obfuscated"
+  ],
+  "decoding_config_hash": "de548733",
+  "row_counts": {
+    "harmful": 4500,
+    "benign": 1170,
+    "total": 5670
+  },
+  "human_audit_status": "completed",
+  "human_audit_rows_total": 1109,
+  "human_audit_harmful_complete": 992,
+  "human_audit_benign_complete": 117,
+  "human_audit_annotator_count": 1,
+  "human_audit_blinded": false,
+  "human_corrected_rows_applied": 992,
+  "judge_blocked_rows": 4,
+  "judge_blocked_rows_manually_resolved": 4,
+  "schema_backfilled_rows": 2,
+  "schema_backfilled_rows_human_confirmed": 2,
+  "join_key_fix": {
+    "harmful_key": [
+      "model_family",
+      "precision",
+      "attack_type",
+      "base_prompt_id"
+    ],
+    "benign_key": [
+      "model_family",
+      "precision",
+      "prompt_id"
+    ],
+    "note": "prompt_id alone is not unique; overlay now uses a validated one_to_one merge on the stable key."
+  },
+  "statistics_method": {
+    "bootstrap": "same-index paired resampling, 10000 draws",
+    "significance_test": "two-sided exact binomial test on discordant pairs (primary); continuity-corrected chi-square retained as sensitivity column",
+    "multiplicity_correction": "Holm, applied separately per (model_family, metric)"
+  },
+  "output_hashes": {
+    "blocked_row_sensitivity.csv": "07d1bfd20bf66e5a061ee0d29f00fcdf",
+    "summary_by_model_precision_attack.csv": "828074439de7ed8765b399fcce352e7b",
+    "audit_provenance.md": "31b1eda8a5200e8ef186a58e9e16c81e",
+    "judged_generations_gemma_all.csv": "1d7aa1872907008be8a78eabddb8df7b",
+    "raw_generations_gemma_all.csv": "bf928afd3d60b835c4fc92fbaefc58a9",
+    "stats_tests.csv": "bf64f5fab79f91b41cc94a6173313ff7",
+    "benign_paired_stats.csv": "91121b0ccd0a7b1a0d586c36b99949e8",
+    "judged_harmful_gemma_all.csv": "0e17b1648d292a3203b768d36dae01a1",
+    "benign_summary.csv": "af2a213ee99d857b359233d74466d6dd",
+    "safety_tax_deltas.csv": "97e23f63ca88ba3c6f3ebd2c104bff89",
+    "run_manifest.json": "8c60755f5d4363f24ec0d570fa89fb46",
+    "GEMMA_CLAIM_CHECK.md": "fb305f9cc4dd291a47040459019d2984",
+    "human_corrected_stats_tests.csv": "bf64f5fab79f91b41cc94a6173313ff7",
+    "manual_audit_sample_filled.csv": "4f174d68983cb262ad6e987d5082720a",
+    "audit_agreement.csv": "d9aaef731be275fafff747fc6b44e9d9",
+    "audit_confusion_matrices.csv": "220117a747fec87a919438d8e94a73d9",
+    "human_corrected_metric_summary.csv": "33c1d6e4e2b2a184f7ea56b8968fb8bf",
+    "human_corrected_safety_tax_deltas.csv": "97e23f63ca88ba3c6f3ebd2c104bff89",
+    "manual_audit_sample.csv": "f79e0ad7474d2a33b7e9af41a986b7fd",
+    "judged_benign_gemma_all.csv": "00aeac520ff39f0a2d40c8588a7525cb",
+    "figures/delta_hcr_ci.png": "bef15b76edfab8e77f7a3974345a81fc",
+    "figures/hcr_strict_vs_no_conflict.png": "5a050cc6710a18f86d00b2a050d731da",
+    "figures/benign_orr_utility.png": "cdbb805a91c1923398b72aa7e4e650ae",
+    "figures/attack_heatmap.png": "358f93056fb197b51da406544f3a0e6a",
+    "figures/README.md": "0a99aa971fc240a238660229462a08d8",
+    "figures/hcr_by_precision.png": "c2378833da63991c9481e94f41b18df6",
+    "figures/leak_after_refusal_by_precision.png": "04ff0cc4861e3cf6b63a93f8a628d1e1"
+  }
+}

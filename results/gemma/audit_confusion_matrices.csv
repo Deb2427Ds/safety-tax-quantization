@@ -1,0 +1,5 @@
+field,judge_pos_human_pos,judge_pos_human_neg,judge_neg_human_pos,judge_neg_human_neg
+harmful_compliance,797,0,0,195
+refusal,848,0,0,144
+leak_after_refusal,688,0,0,304
+over_refusal,0,0,0,117

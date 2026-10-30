@@ -1,0 +1,7 @@
+model_family,comparison,n,mean_utility_fp16,mean_utility_quant,mean_utility_delta,utility_delta_ci_lo,utility_delta_ci_hi,wilcoxon_p,answered_rate_fp16,answered_rate_quant,answered_rate_delta,orr_fp16,orr_quant,orr_delta,p_holm,significant_utility_loss_05
+Gemma-3-1B,fp16_vs_int8,130,0.6969,0.6769,-0.02,-0.0638,0.0227,0.384158,0.9923,0.9846,-0.0077,0.0,0.0,0.0,1.0,False
+Gemma-3-1B,fp16_vs_nf4,130,0.6969,0.6362,-0.0608,-0.1185,-0.0031,0.012448,0.9923,0.9923,0.0,0.0,0.0,0.0,0.074688,False
+Gemma-2-2B,fp16_vs_int8,130,0.7846,0.7604,-0.0242,-0.0662,0.0165,0.310222,0.9769,0.9846,0.0077,0.0,0.0,0.0,1.0,False
+Gemma-2-2B,fp16_vs_nf4,130,0.7846,0.7758,-0.0088,-0.0569,0.0377,0.766685,0.9769,0.9923,0.0154,0.0,0.0,0.0,1.0,False
+Gemma-3-4B,fp16_vs_int8,130,0.767,0.8012,0.0342,-0.0096,0.0769,0.049055,0.9769,0.9769,0.0,0.0,0.0,0.0,0.245275,False
+Gemma-3-4B,fp16_vs_nf4,130,0.767,0.7554,-0.0116,-0.0463,0.0242,0.389202,0.9769,0.9769,0.0,0.0,0.0,0.0,1.0,False
