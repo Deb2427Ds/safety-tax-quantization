@@ -1,0 +1,169 @@
+{
+  "experiment": "safety_tax_in_quantization",
+  "model_family": "llama-3.2",
+  "created_at": "2026-06-24T11:00:17.820629+00:00",
+  "seed": 42,
+  "platform": "Linux-6.12.90+-x86_64-with-glibc2.35",
+  "python": "3.12.13",
+  "gpu": "Tesla T4",
+  "packages": {
+    "torch": "2.10.0+cu128",
+    "transformers": "4.44.2",
+    "bitsandbytes": "0.49.2",
+    "accelerate": "1.13.0",
+    "pandas": "2.3.3",
+    "scipy": "1.16.3",
+    "statsmodels": "0.14.6"
+  },
+  "models": [
+    {
+      "hf_id": "meta-llama/Llama-3.2-1B-Instruct",
+      "family": "Llama-3.2-1B"
+    },
+    {
+      "hf_id": "meta-llama/Llama-3.2-3B-Instruct",
+      "family": "Llama-3.2-3B"
+    }
+  ],
+  "precisions": [
+    "fp16",
+    "int8",
+    "nf4"
+  ],
+  "decoding_config": {
+    "do_sample": false,
+    "temperature": null,
+    "top_p": null,
+    "repetition_penalty": 1.2,
+    "no_repeat_ngram_size": 3,
+    "max_new_tokens": 200
+  },
+  "decoding_config_hash": "de548733",
+  "quantization_config_map": {
+    "fp16": {
+      "load_in_8bit": false,
+      "load_in_4bit": false,
+      "dtype": "bfloat16"
+    },
+    "int8": {
+      "load_in_8bit": true,
+      "load_in_4bit": false,
+      "dtype": "int8"
+    },
+    "nf4": {
+      "load_in_8bit": false,
+      "load_in_4bit": true,
+      "bnb_4bit_quant_type": "nf4",
+      "bnb_4bit_compute_dtype": "bfloat16",
+      "bnb_4bit_use_double_quant": true
+    }
+  },
+  "prompt_set": {
+    "n_harmful": 100,
+    "n_benign": 130,
+    "harmful_source": "AdvBench first 100 (identical to Qwen run)",
+    "attacks": [
+      "direct",
+      "dan_template",
+      "roleplay_authority",
+      "hypothetical",
+      "obfuscated"
+    ]
+  },
+  "run_ids": {
+    "Llama-3.2-1B_fp16": "llama_32_1b_fp16_20260624_014706",
+    "Llama-3.2-1B_int8": "llama_32_1b_int8_20260624_021705",
+    "Llama-3.2-1B_nf4": "llama_32_1b_nf4_20260624_032118",
+    "Llama-3.2-3B_fp16": "llama_32_3b_fp16_20260624_041128",
+    "Llama-3.2-3B_int8": "llama_32_3b_int8_20260624_050040",
+    "Llama-3.2-3B_nf4": "llama_32_3b_nf4_20260624_070523"
+  },
+  "judge": {
+    "backend": "gemini_vertex",
+    "model": "gemini-2.5-flash",
+    "schema_version": "v2_6field_leak_harm_category",
+    "max_prompt_chars": 2000,
+    "max_response_chars": 4000
+  },
+  "row_counts": {
+    "harmful_judged": 3000,
+    "benign_judged": 780,
+    "total_judged": 3780
+  },
+  "human_audit_status": "completed",
+  "output_hashes": {
+    "/kaggle/working/outputs_llama/raw_generations_llama_all.csv": "1a2b4bff066eae868c3332886ddc7d06",
+    "/kaggle/working/outputs_llama/judged_generations_llama_all.csv": "d4594947160a29a8e108b5de837da1db",
+    "/kaggle/working/outputs_llama/judged_harmful_llama_all.csv": "24e0b017a23c1d6f4d78cf91b4a9efbe",
+    "/kaggle/working/outputs_llama/judged_benign_llama_all.csv": "dee606f6b44c8cf53b3ebedb1147481e",
+    "/kaggle/working/outputs_llama/summary_by_model_precision_attack.csv": "267330e157286c50a296bf4c0017a9ae",
+    "/kaggle/working/outputs_llama/stats_tests.csv": "ba9f7f129d4b5330bd4e754264683ebb",
+    "judged_harmful_llama_all.csv": "254df8608bc9277a4671d91ad00a8402",
+    "judged_benign_llama_all.csv": "dee606f6b44c8cf53b3ebedb1147481e",
+    "judged_generations_llama_all.csv": "eda394d25695370caa41ee5f51be72f3",
+    "raw_generations_llama_all.csv": "1a2b4bff066eae868c3332886ddc7d06",
+    "stats_tests.csv": "e59403ff087b1504e92e36eb0e243c89",
+    "safety_tax_deltas.csv": "5f4a20d825cc795315915f951d694075"
+  },
+  "last_updated": "2026-07-01T05:17:28.933718+00:00",
+  "prompt_source": {
+    "harmful_prompt_file": "prompt_set_harmful_base.csv",
+    "benign_prompt_file": "prompt_set_benign.csv",
+    "origin_note": "Prompt sets were exported from the same prompt pool used in the Qwen run to ensure cross-model pairing.",
+    "harmful_prompt_count": 100,
+    "benign_prompt_count": 130,
+    "harmful_prompt_hash": "d81fb59249d49090944d7303bcc6451a",
+    "benign_prompt_hash": "5e14517bd210f8d6e6a35189da13085f",
+    "attacks": [
+      "direct",
+      "dan_template",
+      "roleplay_authority",
+      "hypothetical",
+      "obfuscated"
+    ]
+  },
+  "stats": {
+    "ci_method": "paired_bootstrap_same_indices_10000",
+    "test": "McNemar continuity-corrected chi-square",
+    "multiple_comparison": "Holm within model_family \u00d7 metric",
+    "n_bootstrap": 10000
+  },
+  "human_audit": {
+    "status": "completed",
+    "audit_file": "manual_audit_sample_filled.csv",
+    "n_rows": 524,
+    "n_conflict_rows": 167,
+    "provenance_file": "audit_provenance.md"
+  },
+  "claim_status": {
+    "llama_role_in_paper": "secondary_mixed_validation_not_primary",
+    "claim_check_file": "LLAMA_CLAIM_CHECK.md"
+  },
+  "outputs_added": {
+    "leakage_deltas_csv": {
+      "columns": [
+        "model_family",
+        "scope",
+        "comparison",
+        "metric",
+        "n",
+        "fp16_rate",
+        "quant_rate",
+        "delta",
+        "delta_ci_lo",
+        "delta_ci_hi",
+        "n10",
+        "n01",
+        "mcnemar_p",
+        "p_holm",
+        "significant_05"
+      ],
+      "n_rows": 56,
+      "metrics": [
+        "leak_after_refusal",
+        "heuristic_refusal_bypass"
+      ],
+      "note": "Added post-hoc; HCR metrics remain in stats_tests.csv / safety_tax_deltas.csv unchanged."
+    }
+  }
+}

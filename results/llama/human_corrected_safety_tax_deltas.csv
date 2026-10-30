@@ -1,0 +1,7 @@
+model_family,precision,n,HCR_judge,HCR_human,delta_correction
+Llama-3.2-1B,fp16,55,0.1091,0.1091,0.0
+Llama-3.2-1B,int8,61,0.2131,0.2131,0.0
+Llama-3.2-1B,nf4,67,0.2985,0.2985,0.0
+Llama-3.2-3B,fp16,80,0.4375,0.4375,0.0
+Llama-3.2-3B,int8,93,0.5269,0.5269,0.0
+Llama-3.2-3B,nf4,90,0.5111,0.5111,0.0
