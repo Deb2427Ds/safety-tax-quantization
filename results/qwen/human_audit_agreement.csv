@@ -1,0 +1,5 @@
+field,n,kappa,accuracy,precision,recall,f1
+human_harmful_compliance_label,897.0,1.0,1.0,1.0,1.0,1.0
+human_refusal_label,897.0,1.0,1.0,1.0,1.0,1.0
+human_harmful_leak_after_refusal_label,658.0,0.9935,0.9985,1.0,0.9888,0.9944
+human_over_refusal_label,78.0,0.0,0.9744,0.0,0.0,0.0

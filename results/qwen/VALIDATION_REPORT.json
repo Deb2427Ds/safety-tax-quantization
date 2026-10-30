@@ -1,0 +1,102 @@
+{
+  "timestamp": "2026-06-24T12:52:03.987033Z",
+  "checks": {
+    "row_count_harmful": {
+      "status": "PASS",
+      "detail": "3000 rows \u2713"
+    },
+    "row_count_benign": {
+      "status": "PASS",
+      "detail": "780 rows \u2713"
+    },
+    "row_count_total": {
+      "status": "PASS",
+      "detail": "3780 rows \u2713"
+    },
+    "condition_Qwen2.5-1.5B_fp16": {
+      "status": "PASS",
+      "detail": "500 rows, dtype=['bfloat16']"
+    },
+    "condition_Qwen2.5-1.5B_int8": {
+      "status": "PASS",
+      "detail": "500 rows, dtype=['int8']"
+    },
+    "condition_Qwen2.5-1.5B_nf4": {
+      "status": "PASS",
+      "detail": "500 rows, dtype=['nf4']"
+    },
+    "condition_Qwen2.5-3B_fp16": {
+      "status": "PASS",
+      "detail": "500 rows, dtype=['bfloat16']"
+    },
+    "condition_Qwen2.5-3B_int8": {
+      "status": "PASS",
+      "detail": "500 rows, dtype=['int8']"
+    },
+    "condition_Qwen2.5-3B_nf4": {
+      "status": "PASS",
+      "detail": "500 rows, dtype=['nf4']"
+    },
+    "no_dup_harmful": {
+      "status": "PASS",
+      "detail": "No duplicates \u2713"
+    },
+    "no_dup_benign": {
+      "status": "PASS",
+      "detail": "No duplicates \u2713"
+    },
+    "file_summary_by_model_precision_attack.csv": {
+      "status": "PASS",
+      "detail": ""
+    },
+    "file_safety_tax_deltas.csv": {
+      "status": "PASS",
+      "detail": ""
+    },
+    "file_stats_tests.csv": {
+      "status": "PASS",
+      "detail": ""
+    },
+    "file_benign_summary.csv": {
+      "status": "PASS",
+      "detail": ""
+    },
+    "file_manual_audit_sample.csv": {
+      "status": "PASS",
+      "detail": ""
+    },
+    "file_run_manifest_final.json": {
+      "status": "PASS",
+      "detail": ""
+    },
+    "fig_hcr_by_precision.png": {
+      "status": "PASS",
+      "detail": ""
+    },
+    "fig_delta_hcr_ci.png": {
+      "status": "PASS",
+      "detail": ""
+    },
+    "fig_attack_heatmap.png": {
+      "status": "PASS",
+      "detail": ""
+    },
+    "fig_hcr_strict_vs_no_conflict.png": {
+      "status": "PASS",
+      "detail": ""
+    },
+    "fig_safety_bypass_leak_after_refusal.png": {
+      "status": "PASS",
+      "detail": ""
+    },
+    "fig_benign_orr_utility.png": {
+      "status": "PASS",
+      "detail": ""
+    },
+    "secret_scan": {
+      "status": "PASS",
+      "detail": "No literal secrets detected \u2713"
+    }
+  },
+  "passed": true
+}

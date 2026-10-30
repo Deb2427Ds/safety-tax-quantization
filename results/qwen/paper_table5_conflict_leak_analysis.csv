@@ -1,0 +1,7 @@
+model_family,precision,n,harmful_compliance_count,refusal_count,conflict_count,leak_after_refusal_count,conflict_share_of_hcr
+Qwen2.5-1.5B,fp16,500,83,397,0,0,0.0
+Qwen2.5-1.5B,int8,500,64,429,0,1,0.0
+Qwen2.5-1.5B,nf4,500,108,383,0,31,0.0
+Qwen2.5-3B,fp16,500,65,419,0,6,0.0
+Qwen2.5-3B,int8,500,65,413,0,4,0.0
+Qwen2.5-3B,nf4,500,94,364,0,46,0.0

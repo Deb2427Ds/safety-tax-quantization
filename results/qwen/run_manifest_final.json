@@ -1,0 +1,109 @@
+{
+  "experiment": "safety_tax_in_quantization",
+  "created_at": "2026-06-24T01:23:52.345575Z",
+  "seed": 42,
+  "models": [
+    {
+      "hf_id": "Qwen/Qwen2.5-1.5B-Instruct",
+      "family": "Qwen2.5-1.5B"
+    },
+    {
+      "hf_id": "Qwen/Qwen2.5-3B-Instruct",
+      "family": "Qwen2.5-3B"
+    }
+  ],
+  "precisions": [
+    "fp16",
+    "int8",
+    "nf4"
+  ],
+  "run_ids": {
+    "fp16_int8_1.5B_nf4_3B_fp16_int8": "clean rows carried from prior corrected package",
+    "3B_nf4": "qwen25_3b_nf4_clean_20260614_023647"
+  },
+  "decoding_config": {
+    "do_sample": false,
+    "temperature": null,
+    "top_p": null,
+    "repetition_penalty": 1.2,
+    "no_repeat_ngram_size": 3,
+    "max_new_tokens": 200
+  },
+  "decoding_config_hash": "de548733",
+  "quantization_config_map": {
+    "fp16": {
+      "load_in_8bit": false,
+      "load_in_4bit": false,
+      "dtype": "bfloat16"
+    },
+    "int8": {
+      "load_in_8bit": true,
+      "load_in_4bit": false,
+      "dtype": "int8"
+    },
+    "nf4": {
+      "load_in_8bit": false,
+      "load_in_4bit": true,
+      "bnb_4bit_quant_type": "nf4",
+      "bnb_4bit_compute_dtype": "bfloat16",
+      "bnb_4bit_use_double_quant": true
+    }
+  },
+  "judge": {
+    "backend": "gemini_vertex",
+    "model": "gemini-2.5-flash",
+    "schema_version": "v2_6field_leak_harm_category",
+    "max_prompt_chars": 2000,
+    "max_response_chars": 4000,
+    "all_harmful_rows_rejudged": true,
+    "all_benign_rows_rejudged": true
+  },
+  "row_counts": {
+    "harmful_judged": 3000,
+    "benign_judged": 780,
+    "total_judged": 3780,
+    "expected_harmful": 3000,
+    "expected_benign": 780,
+    "expected_total": 3780
+  },
+  "output_file_hashes": {
+    "raw_generations_qwen_all.csv": "6167c3af6e229755bcef46142722366e3ec109d409904b55f734a2232be60125",
+    "judged_harmful_qwen_all.csv": "7c9f42c5def95150f6797945a9de3ba9433c578ee4d0addb919f906c0bf1a871",
+    "judged_benign_qwen_all.csv": "83ce084df70ccfc6ecbe03715e1ccadc035b48bb5b553c64b0c7dfea1a29806e",
+    "judged_generations_qwen_all.csv": "3211503066ac0812a4feae4367c1337cbe1f0ca58ecb5e1c0701e50257031427",
+    "summary_by_model_precision_attack.csv": "5d91e816dd5b3660f88b4001301bbb48b36ed24a26cd8b18a19118ede661a686",
+    "safety_tax_deltas.csv": "99ce5f5afcbb4c02fb533d8ffb0b7c26dfe93e6623f91c00237121fb72f67b1e",
+    "stats_tests.csv": "818adfee1dc881d13f4fe2f39daf7123773abfd37f12a447ecd180e69e30f34f",
+    "benign_summary.csv": "5c24863b1c1e01d4e18d62ce473e534c989ca40a110d42b99f326d0346cca039",
+    "manual_audit_sample.csv": "106ffbb3c6ef6060b7c06be9da58e196a214ca597a7e5507e6848fd7a4082866",
+    "hcr_by_precision.png": "670bbbb7007bf6af5472f928b961e891ff5addb788c01d3c4eacfcc5eee26331",
+    "delta_hcr_ci.png": "a9de5a373d56ea207625f01d32de9d2f97d194e79f68ac3ccf2f842f52a8bb11",
+    "attack_heatmap.png": "fa6fa057490574f622c1659da54c6c920235aaa8fbdd127a986daebae561abc4",
+    "hcr_strict_vs_no_conflict.png": "a82ba2b15470b9bf67c2ee6689f9b8c5d807a97af813c8cca2a6119aafdb68f7",
+    "safety_bypass_leak_after_refusal.png": "1a693b3fac5248e1d4a61abdd01d1b26eebf1cf0242539216617b4e83a877806",
+    "benign_orr_utility.png": "af05d5b1271edf522853e8e0ce40d51319c16e870478665f760041ae256e6246"
+  },
+  "human_audit_status": "pending",
+  "platform": "Linux-6.6.122+-x86_64-with-glibc2.35",
+  "packages": {
+    "torch": "2.10.0+cu128",
+    "transformers": "4.44.2",
+    "bitsandbytes": "0.49.2",
+    "accelerate": "1.13.0",
+    "pandas": "2.3.3",
+    "scipy": "1.16.3",
+    "statsmodels": "0.14.6"
+  },
+  "changelog": [
+    "Dropped ALL prior Qwen2.5-3B NF4 rows (both old run_ids) and regenerated 630 rows under single new run_id qwen25_3b_nf4_clean_20260614_023647 (prompt \u00a73).",
+    "Backfilled canonical quantization_config for all INT8/NF4 rows in raw (prompt \u00a72).",
+    "Standardized dtype_actual per precision across all rows (prompt \u00a72).",
+    "decoding_config_hash propagated from raw into all judged outputs (prompt \u00a72).",
+    "Re-judged ALL 3,000 harmful rows with new 6-field schema incl. harmful_leak_after_refusal_label and harm_category (prompt \u00a74).",
+    "Re-judged all 780 benign rows with over_refusal/answered/utility schema.",
+    "Added HCR_strict and HCR_no_conflict to summary table (prompt \u00a74/\u00a77).",
+    "Rebuilt manual_audit_sample.csv with all 7 human_* columns and a 'conflict' audit_reason bucket (prompt \u00a75).",
+    "Granite NOT included \u2014 out of scope for this run (prompt \u00a76), see final cell."
+  ],
+  "last_updated": "2026-06-24T01:23:52.345677Z"
+}

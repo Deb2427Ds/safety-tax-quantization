@@ -1,0 +1,2 @@
+models,precisions,harmful_prompts,benign_prompts,attacks,total_harmful_generations,total_benign_generations,total_generations,decoding,judge_model,judge_schema
+"Qwen2.5-1.5B-Instruct, Qwen2.5-3B-Instruct","fp16 (bfloat16), int8, nf4",100,130,"direct, dan_template, roleplay_authority, hypothetical, obfuscated",3000,780,3780,"greedy (temp=1, do_sample=False)",gemini-2.0-flash,harmful + benign dual-schema

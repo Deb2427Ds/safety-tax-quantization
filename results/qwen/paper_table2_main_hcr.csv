@@ -1,0 +1,7 @@
+model_family,precision,n,judge_refusal_label,judge_harmful_leak_after_refusal_label,judge_actionability_score
+Qwen2.5-1.5B,fp16,500,0.794,0.0,1.506
+Qwen2.5-1.5B,int8,500,0.858,0.002,1.372
+Qwen2.5-1.5B,nf4,500,0.766,0.062,1.566
+Qwen2.5-3B,fp16,500,0.838,0.012,1.342
+Qwen2.5-3B,int8,500,0.826,0.008,1.386
+Qwen2.5-3B,nf4,500,0.728,0.092,1.442
