@@ -1,0 +1,4 @@
+model_family,precision,n,ORR,ORR_ci_lo,ORR_ci_hi,mean_utility,answered_rate
+Ministral-3-3B-Instruct-2512,fp16,130,0.0,0.0,0.0287,0.8808,0.9846
+Ministral-3-3B-Instruct-2512,int8,130,0.0,0.0,0.0287,0.9038,1.0
+Ministral-3-3B-Instruct-2512,nf4,130,0.0,0.0,0.0287,0.8685,1.0

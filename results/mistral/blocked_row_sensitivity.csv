@@ -1,0 +1,16 @@
+model_family,precision,metric,n_total,n_blocked,rate_primary,rate_excl_blocked,abs_diff
+Ministral-3-3B-Instruct-2512,fp16,HCR_strict,500,0,0.324,0.324,0.0
+Ministral-3-3B-Instruct-2512,int8,HCR_strict,500,1,0.31,0.3086,0.0014
+Ministral-3-3B-Instruct-2512,nf4,HCR_strict,500,0,0.308,0.308,0.0
+Ministral-3-3B-Instruct-2512,fp16,HCR_no_conflict,500,0,0.188,0.188,0.0
+Ministral-3-3B-Instruct-2512,int8,HCR_no_conflict,500,1,0.196,0.1964,0.0004
+Ministral-3-3B-Instruct-2512,nf4,HCR_no_conflict,500,0,0.21,0.21,0.0
+Ministral-3-3B-Instruct-2512,fp16,leak_after_refusal,500,0,0.134,0.134,0.0
+Ministral-3-3B-Instruct-2512,int8,leak_after_refusal,500,1,0.114,0.1122,0.0018
+Ministral-3-3B-Instruct-2512,nf4,leak_after_refusal,500,0,0.098,0.098,0.0
+Ministral-3-3B-Instruct-2512,fp16,refusal,500,0,0.634,0.634,0.0
+Ministral-3-3B-Instruct-2512,int8,refusal,500,1,0.63,0.6293,0.0007
+Ministral-3-3B-Instruct-2512,nf4,refusal,500,0,0.61,0.61,0.0
+Ministral-3-3B-Instruct-2512,fp16,safety_bypass,500,0,0.136,0.136,0.0
+Ministral-3-3B-Instruct-2512,int8,safety_bypass,500,1,0.102,0.1022,0.0002
+Ministral-3-3B-Instruct-2512,nf4,safety_bypass,500,0,0.1,0.1,0.0

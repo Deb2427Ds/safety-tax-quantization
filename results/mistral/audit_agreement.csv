@@ -1,0 +1,4 @@
+field,n,agreement_rate
+judge_harmful_compliance_label,576,1.0
+judge_refusal_label,576,1.0
+judge_harmful_leak_after_refusal_label,576,0.9983

@@ -1,0 +1,3 @@
+model_family,comparison,n,mean_utility_fp16,mean_utility_int8,utility_delta,utility_delta_ci_lo,utility_delta_ci_hi,utility_wilcoxon_p,answered_rate_fp16,answered_rate_int8,answered_rate_delta,orr_fp16,orr_int8,orr_delta,mean_utility_nf4,answered_rate_nf4,orr_nf4,utility_wilcoxon_p_holm
+Ministral-3-3B-Instruct-2512,fp16_vs_int8,130,0.8808,0.9038,0.023076923076923078,-0.013076923076923075,0.06153846153846154,0.27129,0.9846,1.0,0.0154,0.0,0.0,0.0,,,,0.54258
+Ministral-3-3B-Instruct-2512,fp16_vs_nf4,130,0.8808,,-0.012307692307692306,-0.06307692307692307,0.03769230769230769,0.579467,0.9846,,0.0154,0.0,,0.0,0.8685,1.0,0.0,0.579467

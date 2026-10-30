@@ -1,0 +1,4 @@
+field,tp,tn,fp,fn
+judge_harmful_compliance_label,471,105,0,0
+judge_refusal_label,251,325,0,0
+judge_harmful_leak_after_refusal_label,173,402,0,1

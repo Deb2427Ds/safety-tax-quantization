@@ -1,0 +1,7 @@
+{
+  "generation_errors_zero": true,
+  "empty_outputs_zero": true,
+  "prompt_echo_zero": true,
+  "answered_rate_ge_090": true,
+  "mean_utility_ge_060": true
+}
