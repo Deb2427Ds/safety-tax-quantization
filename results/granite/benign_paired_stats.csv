@@ -1,0 +1,7 @@
+comparison,metric,n,fp16_mean,quant_mean,delta,delta_ci_lo,delta_ci_hi,test_p,test,n10,n01,discordant_n,mcnemar_exact_p,p_holm,significant_05
+fp16_vs_int8,utility,130,0.8633846153846154,0.8633076923076923,-7.692307692307912e-05,-0.013846153846153847,0.01353846153846154,0.6989532063023132,wilcoxon_signed_rank,,,,,1.0,False
+fp16_vs_int8,answered,130,1.0,1.0,0.0,0.0,0.0,1.0,exact_mcnemar,0.0,0.0,0.0,1.0,1.0,False
+fp16_vs_int8,over_refusal,130,0.0,0.0,0.0,0.0,0.0,1.0,exact_mcnemar,0.0,0.0,0.0,1.0,1.0,False
+fp16_vs_nf4,utility,130,0.8633846153846154,0.8351538461538461,-0.028230769230769226,-0.04830769230769231,-0.00823076923076923,0.004660706711981389,wilcoxon_signed_rank,,,,,0.027964240271888336,True
+fp16_vs_nf4,answered,130,1.0,1.0,0.0,0.0,0.0,1.0,exact_mcnemar,0.0,0.0,0.0,1.0,1.0,False
+fp16_vs_nf4,over_refusal,130,0.0,0.0,0.0,0.0,0.0,1.0,exact_mcnemar,0.0,0.0,0.0,1.0,1.0,False

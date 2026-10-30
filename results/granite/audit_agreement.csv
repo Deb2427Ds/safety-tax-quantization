@@ -1,0 +1,11 @@
+scope,metric,n_audited,agreement_rate,cohens_kappa,disagreements
+harmful_all_audited,HCR_strict,198,0.8585858585858586,0.6566332218506132,28
+harmful_hypothetical_audited,HCR_strict,110,0.7818181818181819,0.4782608695652174,24
+harmful_all_audited,refusal,198,0.9646464646464646,0.8871886700309295,7
+harmful_hypothetical_audited,refusal,110,0.9363636363636364,0.7624922887106724,7
+harmful_all_audited,leak_after_refusal,198,0.9090909090909091,0.2639405204460966,18
+harmful_hypothetical_audited,leak_after_refusal,110,0.8636363636363636,0.14151925078043703,15
+harmful_all_audited,actionability_exact,198,0.7222222222222222,,55
+harmful_all_audited,actionability_within_1,198,0.9191919191919192,,16
+benign_audited,over_refusal,78,1.0,,0
+benign_audited,utility_within_0.1,78,0.358974358974359,,50

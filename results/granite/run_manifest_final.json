@@ -1,0 +1,124 @@
+{
+  "experiment": "safety_tax_in_quantization",
+  "model_family": "Granite-3.1-2B",
+  "model_hf_id": "ibm-granite/granite-3.1-2b-instruct",
+  "model_revision_sha": "bbc2aed595bd38bd770263dc3ab831db9794441d",
+  "generation_config": {
+    "do_sample": false,
+    "max_new_tokens": 200
+  },
+  "canonical_decoding_config_hash": "db83bd20e8b04ef7520c45b3336aa808",
+  "quantization_config": {
+    "fp16": [
+      ""
+    ],
+    "int8": [
+      "{\"compute_dtype\": \"bfloat16\", \"load_in_8bit\": true}",
+      "{\"compute_dtype\": \"float16\", \"load_in_8bit\": true}"
+    ],
+    "nf4": [
+      "{\"compute_dtype\": \"bfloat16\", \"double_quant\": true, \"load_in_4bit\": true, \"quant_type\": \"nf4\"}"
+    ]
+  },
+  "dtype_actual_by_precision": {
+    "fp16": {
+      "bfloat16": 400,
+      "float16": 100
+    },
+    "int8": {
+      "int8": 399,
+      "float16": 101
+    },
+    "nf4": {
+      "bfloat16": 500
+    }
+  },
+  "primary_harmful_judge_backend": "opencode_session_api",
+  "primary_harmful_judge_model": "mimo-v2.6-flash-free",
+  "primary_harmful_judge_prompt_hash": "ac36671c1f4de91b",
+  "primary_harmful_judge_schema_version": "harmful_uniform_v3",
+  "primary_benign_judge_backend": "opencode_session_api",
+  "primary_benign_judge_model": "mimo-v2.6-flash-free",
+  "primary_benign_judge_prompt_hash": "796c3491562112eb",
+  "primary_benign_judge_schema_version": "benign_uniform_v1",
+  "historical_judge_outputs": "secondary_provenance_only; excluded_from_primary_statistics",
+  "human_audit": {
+    "rows": 278,
+    "harmful": 200,
+    "benign": 78,
+    "annotators": 1,
+    "strict_hcr_positive_coverage": "68/68",
+    "leak_positive_coverage": "18/18"
+  },
+  "repair_rows": 202,
+  "replacement_rows": 202,
+  "missing_active_response_rows": 2,
+  "pair_counts": {
+    "aggregate_all": 500,
+    "aggregate_excl_hypothetical": 400,
+    "direct": 100,
+    "dan_template": 100,
+    "roleplay_authority": 100,
+    "hypothetical": 100,
+    "obfuscated": 100
+  },
+  "statistical_tests": {
+    "bootstrap": "paired same-index, n_boot=10000, seed=42, alpha=0.05",
+    "binary": "exact McNemar (binomial, two-sided)",
+    "benign_utility": "Wilcoxon signed-rank"
+  },
+  "holm_family": "per model_family x metric over 7 scopes x 2 comparisons = 14 (benign: 3 metrics x 2 comparisons = 6)",
+  "final_classification": {
+    "primary": "D. null / mixed result",
+    "human_corrected": "D. null / mixed result"
+  },
+  "validation": {
+    "passed": 31,
+    "total": 31,
+    "banner": "ALL CHECKS PASSED"
+  },
+  "manifest_note": "This manifest's own hash is intentionally not included.",
+  "relative_path_output_hashes": {
+    "GRANITE_CLAIM_CHECK.md": "fe8db6288d8b00751aa66a02054b0f2713e14968109a8808fda8b64514c20288",
+    "JUDGE_EXECUTION_NOTE.json": "61757e593a879486989c9ccdf15d89fc203762a64c9f522509ad7dd67426735b",
+    "README_GRANITE_FINAL.md": "b439a4b0c09b8e33825c913340142e76e00f1a98e5a0307ccf2bf2f6b6e697e9",
+    "VALIDATION_REPORT_GRANITE.md": "89cd921eafa1fba8480d6f98aa3edabe7d9ecb5bbc8a5ac70a29b535a42f9d5b",
+    "audit_agreement.csv": "7d493379bd05904b9bcedadd858467be687dcf6a8c5eadecba62358fd47f2f29",
+    "audit_confusion_matrices.csv": "c0d76e98d367252340836e7ece3ad8df88b1ba070a4033aba94ec02bb53ecb11",
+    "audit_provenance.md": "d69ebab40f8a0f0e91abf1029d6a7b7813ffd7216c335f03395b4f9483837040",
+    "benign_paired_stats.csv": "a77e318fc65b5f5d100e6037ee0892c594d9fc3e53bed8a7bfc60b57c9565c6f",
+    "benign_summary.csv": "49217f5f6b90af38ddd46a466a9789522908397f33febff73a7d12de21891570",
+    "blocked_row_sensitivity.csv": "eddff2ce55c07b23c4b0a2d4482f10d85a4489146e249b5ad83d35d185520fa0",
+    "code/environment_snapshot.txt": "5159cfea23aba74b3fdee06da062d8941cd13c56cf31caa65a8e7f2a06e4c406",
+    "code/granite_v2_pipeline.py": "2c1adc057d39151ad5edbcb9a5d04c853a9c13b7fb93c0268307f1d82d567397",
+    "code/requirements.txt": "c5264ec0746231604ec4b093ac4d850f797bd65b158a9aad1f0cb4bbda37c2a4",
+    "figures/attack_heatmap.png": "e6e7aedc2ce670cb91903e6f0268366392bd41e5b6de699295ca811ba967d3a9",
+    "figures/benign_orr_utility.png": "c13df5764a15196d34950e23f1ddee73409987b27c3191fefd2140a79a5c69ca",
+    "figures/delta_hcr_ci.png": "9545856d358c82496e4ebb1638d1e938a2be9228c536836412c7e956a3c547f0",
+    "figures/hcr_by_precision.png": "b4c42e6b11cc9b072fc462598abc5fe83272570c8788f0512110199bc47607c0",
+    "figures/hcr_strict_vs_no_conflict.png": "a76913779bfd8d7d204225a094563756e589d83e42f65aae62b24ebc72b823b6",
+    "figures/leak_after_refusal_by_precision.png": "a6ee28d05a781bc981b10d3f92d25adc43379ce606f52e1e0401b912bd4a1572",
+    "generation_run_provenance.csv": "460066f9fb9f17612fb1c5b81a6c26dee0b64d2ed9b07e732f785f17dd328e91",
+    "historical_judge_outputs/README.txt": "35dd46aa40107ed1aabc826014ebb4a51b7c805f9fcabb3b81dd27f5e370b673",
+    "historical_judge_outputs/judged_generations_granite_all_hist_input.csv": "0ff3d3dfe210f3a3c3c3bfafa707ac5a1cbb685ffe7bd7ba41ea1e442ef4a4e7",
+    "historical_judge_outputs/targeted_judged_checkpoint.csv": "49f1ffa5e523be7c88f3b04d0a7d34495873dfa53564bc4f8dc7f99e7e1139d6",
+    "human_corrected_granite_all.csv": "242e5f773b577d7551388d9f723d1cc8707db4d7a078b00bc4bc391d0a2deaf7",
+    "human_corrected_metric_summary.csv": "e08711bcfcb21056cc5f77b674fc351aa3da0210c17cf3669fbec663054ba888",
+    "human_corrected_safety_tax_deltas.csv": "14fce76ee68c169173bd61b1b8166cd8f455a1b58419b9f71f18f6c5a3a44a10",
+    "human_corrected_stats_tests.csv": "d5d5ec170dd917ae3b035c10fc408e0048591bb675348f6ae6d5405ff19f9763",
+    "judged_benign_granite_all.csv": "c4a199a8fbb37286230ad0878fac462bcca378064175bc80eeebb1d75dd1d336",
+    "judged_benign_granite_historical.csv": "95b3ad9873bec659aa2f5fbaeb56d11cd046a1a463d35d268b167968c76046a5",
+    "judged_generations_granite_all.csv": "0b0f94037bee5b41d93e3b09c1ce7e268b2ae2de6458166f98cee5ab7f8b72c2",
+    "judged_harmful_granite_all.csv": "a2017dbd8ec5f5f91e22a9bbd4fcbbc5d17b6723c6d43bc8916d7996fdef5605",
+    "judged_harmful_granite_historical.csv": "23624fc0c315eb91496cfb0054635b7200667ca5f923043ac764a8e362c3c78d",
+    "manual_audit_sample.csv": "967223fb83965253f3c299f8cbed2eec506eba3a2b0872d1d3feef0216288390",
+    "manual_audit_sample_filled.csv": "aa9a29dab40201a28e720ef263c9ebab6617c5e43fbedf7b1f4e4441cfa5f709",
+    "manual_audit_sheet_blinded.csv": "ff20cb0973249c0298a60e4766b880d860b7632a2db85bdb890ab56062c2c178",
+    "raw_generations_granite_normalized.csv": "b849a78184923413c553b0d29ee2769219f710bf41494f0925866dee0fb3ba25",
+    "raw_generations_granite_source.csv": "b1495ee5f971fb228b7ae04e1e705b1d51ce6f3448c1b9546cd46649c499aa7c",
+    "replaced_rows_archive.csv": "df7415c410ba6bd49e43de15fadeaedeaec1ca624b90780da8cf223e8bdb58e6",
+    "safety_tax_deltas.csv": "415f4b4b92d80f643d7d667bbee4b0f0a6c634499b53623fd656fd9348e81bd9",
+    "stats_tests.csv": "f17a4e11ced77c706881861d3749ea032a24f9e8ef096ef9b7db0ea9ea2c6e58",
+    "summary_by_model_precision_attack.csv": "d8ed4f6c4dbeb71250a934084972541369ffa440c9eadc2dccbb57f3d6c69943"
+  }
+}

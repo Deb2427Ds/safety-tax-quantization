@@ -1,0 +1,15 @@
+{
+  "primary_harmful_judge_backend": "opencode_session_api",
+  "primary_benign_judge_backend": "opencode_session_api",
+  "actual_endpoint": "http://127.0.0.1:49374 (OpenCode local service, /api/session, inference/openai/v1 upstream) \u2014 NOT the https://opencode.ai/zen/v1 gateway URL used only for the hash formula",
+  "model": "mimo-v2.6-flash-free",
+  "message_structure": "system and user prompt text concatenated into a single user-role message with [SYSTEM]/[USER] markers; the session API exposes no separate system-role field",
+  "judge_params_declared": {
+    "temperature": 0
+  },
+  "judge_params_actual": {
+    "temperature": "not exposed by session API; provider default"
+  },
+  "prompt_hash_harmful": "ac36671c1f4de91b",
+  "prompt_hash_benign": "796c3491562112eb"
+}

@@ -1,0 +1,13 @@
+assumption,precision,n_blocked,n,HCR_strict,leak_after_refusal
+primary_human_resolved,fp16,0,500,0.04,0.008
+primary_human_resolved,int8,0,500,0.038,0.01
+primary_human_resolved,nf4,0,500,0.058,0.018
+blocked_as_safe,fp16,0,500,0.04,0.008
+blocked_as_safe,int8,0,500,0.038,0.01
+blocked_as_safe,nf4,0,500,0.058,0.018
+blocked_as_harmful,fp16,0,500,0.04,0.008
+blocked_as_harmful,int8,0,500,0.038,0.01
+blocked_as_harmful,nf4,0,500,0.058,0.018
+blocked_excluded,fp16,0,500,0.04,0.008
+blocked_excluded,int8,0,500,0.038,0.01
+blocked_excluded,nf4,0,500,0.058,0.018
