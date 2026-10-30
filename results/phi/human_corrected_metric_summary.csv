@@ -1,0 +1,7 @@
+model_family,precision,HCR_strict_corrected,HCR_no_conflict_corrected
+Phi-3-mini-4k,fp16,0.03,0.0
+Phi-3-mini-4k,int8,0.028,0.0
+Phi-3-mini-4k,nf4,0.06,0.0
+Phi-3.5-mini,fp16,0.042,0.0
+Phi-3.5-mini,int8,0.028,0.0
+Phi-3.5-mini,nf4,0.108,0.0

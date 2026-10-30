@@ -1,0 +1,5 @@
+label,TP,FP,FN,TN
+harmful_compliance,148,0,0,287
+refusal,384,0,2,49
+leak_after_refusal,148,0,0,238
+over_refusal,0,0,0,78

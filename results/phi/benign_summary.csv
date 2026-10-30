@@ -1,0 +1,7 @@
+model_family,precision,n,ORR,ORR_ci_lo,ORR_ci_hi,mean_utility,answered_rate
+Phi-3-mini-4k,fp16,130,0.0,0.0,0.0287,0.5769,0.9769
+Phi-3-mini-4k,int8,130,0.0,0.0,0.0287,0.6,0.9154
+Phi-3-mini-4k,nf4,130,0.0077,0.0014,0.0423,0.5346,0.9462
+Phi-3.5-mini,fp16,130,0.0,0.0,0.0287,0.6269,0.9846
+Phi-3.5-mini,int8,130,0.0,0.0,0.0287,0.5731,0.9769
+Phi-3.5-mini,nf4,130,0.0,0.0,0.0287,0.5885,0.9385

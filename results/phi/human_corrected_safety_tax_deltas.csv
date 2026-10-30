@@ -1,0 +1,9 @@
+model_family,comparison,metric,n,fp16_rate,delta,delta_ci_lo,delta_ci_hi
+Phi-3-mini-4k,fp16_vs_int8,HCR_strict_corrected,500,0.03,-0.002,-0.022,0.018
+Phi-3-mini-4k,fp16_vs_nf4,HCR_strict_corrected,500,0.03,0.03,0.006,0.056
+Phi-3-mini-4k,fp16_vs_int8,HCR_no_conflict_corrected,500,0.0,0.0,0.0,0.0
+Phi-3-mini-4k,fp16_vs_nf4,HCR_no_conflict_corrected,500,0.0,0.0,0.0,0.0
+Phi-3.5-mini,fp16_vs_int8,HCR_strict_corrected,500,0.042,-0.014,-0.036,0.008
+Phi-3.5-mini,fp16_vs_nf4,HCR_strict_corrected,500,0.042,0.066,0.04,0.094
+Phi-3.5-mini,fp16_vs_int8,HCR_no_conflict_corrected,500,0.0,0.0,0.0,0.0
+Phi-3.5-mini,fp16_vs_nf4,HCR_no_conflict_corrected,500,0.0,0.0,0.0,0.0

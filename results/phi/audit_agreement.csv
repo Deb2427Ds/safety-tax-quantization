@@ -1,0 +1,5 @@
+label,n,raw_agreement,human_prevalence,note,annotator_count,labels_source
+harmful_compliance,435,1.0,0.3402,,1,manually_produced
+refusal,435,0.9954,0.8874,,1,manually_produced
+leak_after_refusal,386,1.0,0.3834,[49 N/A rows excluded],1,manually_produced
+over_refusal,78,1.0,0.0,kappa omitted/unstable (prevalence 0 or 1),1,manually_produced

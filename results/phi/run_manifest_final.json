@@ -1,0 +1,147 @@
+{
+  "experiment": "safety_tax_in_quantization",
+  "model_family": "phi",
+  "created_at": "2026-06-27T04:21:06.479113+00:00",
+  "seed": 42,
+  "platform": "Linux-6.12.90+-x86_64-with-glibc2.35",
+  "python": "3.12.13",
+  "packages": {
+    "torch": "2.10.0+cpu",
+    "transformers": "4.44.2",
+    "bitsandbytes": "0.49.2",
+    "accelerate": "1.13.0",
+    "pandas": "2.3.3",
+    "scipy": "1.16.3",
+    "statsmodels": "0.14.6"
+  },
+  "models": [
+    {
+      "hf_id": "microsoft/Phi-3.5-mini-instruct",
+      "family": "Phi-3.5-mini"
+    },
+    {
+      "hf_id": "microsoft/Phi-3-mini-4k-instruct",
+      "family": "Phi-3-mini-4k"
+    }
+  ],
+  "precisions": [
+    "fp16",
+    "int8",
+    "nf4"
+  ],
+  "decoding_config": {
+    "do_sample": false,
+    "temperature": null,
+    "top_p": null,
+    "repetition_penalty": 1.2,
+    "no_repeat_ngram_size": 3,
+    "max_new_tokens": 200
+  },
+  "decoding_config_hash": "de548733",
+  "quantization_config_map": {
+    "fp16": {
+      "load_in_8bit": false,
+      "load_in_4bit": false,
+      "dtype": "bfloat16"
+    },
+    "int8": {
+      "load_in_8bit": true,
+      "load_in_4bit": false,
+      "dtype": "int8"
+    },
+    "nf4": {
+      "load_in_8bit": false,
+      "load_in_4bit": true,
+      "bnb_4bit_quant_type": "nf4",
+      "bnb_4bit_compute_dtype": "bfloat16",
+      "bnb_4bit_use_double_quant": true
+    }
+  },
+  "prompt_set": {
+    "n_harmful": 100,
+    "n_benign": 130,
+    "harmful_source": "AdvBench first 100 (identical to Qwen and Llama runs)",
+    "attacks": [
+      "direct",
+      "dan_template",
+      "roleplay_authority",
+      "hypothetical",
+      "obfuscated"
+    ]
+  },
+  "run_ids": {
+    "Phi-3-mini-4k_fp16": "phi_3_mini_4k_fp16_20260626_044303",
+    "Phi-3-mini-4k_int8": "phi_3_mini_4k_int8_20260626_120349",
+    "Phi-3-mini-4k_nf4": "phi_3_mini_4k_nf4_20260626_142804",
+    "Phi-3.5-mini_fp16": "phi_35_mini_fp16_20260625_024335",
+    "Phi-3.5-mini_int8": "phi_35_mini_int8_20260625_140021",
+    "Phi-3.5-mini_nf4": "phi_35_mini_nf4_20260626_032519"
+  },
+  "judge": {
+    "backend": "gemini_vertex",
+    "model": "gemini-2.5-flash",
+    "schema_version": "v2_7field_leak_harm_category_benign_separate",
+    "harmful_schema": [
+      "harmful_compliance_label",
+      "refusal_label",
+      "harmful_leak_after_refusal_label",
+      "actionability_score",
+      "harm_category",
+      "confidence",
+      "notes"
+    ],
+    "benign_schema": [
+      "over_refusal_label",
+      "answered_label",
+      "utility_score",
+      "notes"
+    ],
+    "max_prompt_chars": 2000,
+    "max_response_chars": 4000
+  },
+  "row_counts": {
+    "harmful_judged": 3000,
+    "benign_judged": 780,
+    "total_judged": 3780,
+    "expected_harmful": 3000,
+    "expected_benign": 780
+  },
+  "last_updated": "2026-07-11T04:49:18.150863+00:00",
+  "gpu": "Tesla T4",
+  "human_audit_status": "completed",
+  "blocked_row_handling_policy": "retry via judge (2 attempts); still-failing rows kept at safe default labels, flagged judge_manual_resolution, included in human audit, excluded in sensitivity_excl_blocked_rows.csv",
+  "prompt_set_hash": "38e9e2807823523c96562c909b7dd540",
+  "judge_schema_version": "v2_7field_leak_harm_category_benign_separate",
+  "judge_model": "gemini-2.5-flash",
+  "output_hashes": {
+    "PHI_CLAIM_CHECK.md": "24ca9db1ad3ace8b5c15f33e76282c63",
+    "VALIDATION_REPORT_PHI.md": "ef5bf0fa14802e9ba190c8b47f1dcdfc",
+    "audit_agreement.csv": "92d486d183134a18a0ef44af40f84529",
+    "audit_confusion_matrices.csv": "6bf7953df093935682d87a99f60021a7",
+    "audit_provenance.md": "60c365e7ab3e845fa0b5b21f10bd349e",
+    "benign_summary.csv": "d8597cb6a40d4b7ee877759487660434",
+    "figures/attack_heatmap.png": "1f7cb1669d8a1c5cda7616bc903e7a7e",
+    "figures/benign_orr_utility.png": "65a2488c11543730eff54e562b34376d",
+    "figures/delta_hcr_ci.png": "ad9737f997b9e226fb7e49bfd6db1b0f",
+    "figures/hcr_by_precision.png": "6df22d446a9b4feca6607b9294beb294",
+    "figures/hcr_strict_vs_no_conflict.png": "9d5f4c2f5d269e0217ad0cf778cde14a",
+    "figures/safety_bypass_leak_after_refusal.png": "f53f520aa652f6e635919a67dea2a3ba",
+    "human_corrected_metric_summary.csv": "756e1bdbd235381601dae054431b75d9",
+    "human_corrected_safety_tax_deltas.csv": "4081addcee3457e937e4adcfacd7657b",
+    "judged_benign_phi_all.csv": "18a64afddccd32933aba7b7a1af84345",
+    "judged_generations_phi_all.csv": "faf0c8acdb34578469d7fca94ece8bc4",
+    "judged_harmful_phi_all.csv": "58a29eafa0448f2f7a96971fc3f00358",
+    "manual_audit_sample.csv": "5e63b34ef7ad127c5afcb3f58e5a41b3",
+    "manual_audit_sample_filled.csv": "87e1eb3a60025d0b54d1f28eef59ae89",
+    "raw_generations_phi_all.csv": "b885991862e09c4f71b7efe240192c3a",
+    "run_manifest_final.json": "6d0714b304244a01c891059a3d610272",
+    "safety_tax_deltas.csv": "11b6d8b35ad4d29824351545a921bc48",
+    "sensitivity_excl_blocked_rows.csv": "abcdc97efa450961835ce0e30a5fd864",
+    "stats_tests.csv": "a479c9a6204e9e8bd03066028c055dac",
+    "summary_by_model_precision_attack.csv": "647bbb375b7f3a020ad156fb38813afa"
+  },
+  "blocked_rows_total": 4,
+  "blocked_rows_manually_reviewed": 4,
+  "human_audit_annotator_count": 1,
+  "human_audit_blinded": false
+}
