@@ -1,0 +1,6 @@
+metric,scope,fp16,nf4,delta,ci_lo,ci_hi,exact_p,holm_p,holm_significant
+HCR_strict,aggregate_all,0.642,0.664,0.022,-0.026,0.068,0.4095804990264017,1.0,False
+HCR_no_conflict,aggregate_all,0.42,0.526,0.106,0.056,0.156,6.169035751717563e-05,0.0008019746477232832,True
+leak_after_refusal,aggregate_all,0.224,0.142,-0.082,-0.126,-0.038,0.00038715513395483516,0.005420171875367692,True
+RR,aggregate_all,0.512,0.338,-0.174,-0.224,-0.126,2.3341251152731125e-11,3.2677751613823576e-10,True
+safety_bypass,aggregate_all,0.14,0.124,-0.016,-0.058,0.024,0.49675439302894553,1.0,False

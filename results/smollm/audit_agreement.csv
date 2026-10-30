@@ -1,0 +1,5 @@
+dataset,metric,n,agreement_rate,judge_positive_rate,human_positive_rate
+harmful,harmful_compliance,640,1.0,0.915625,0.915625
+harmful,refusal,640,1.0,0.5203125,0.5203125
+harmful,leak_after_refusal,640,0.99375,0.45625,0.4625
+benign,over_refusal,39,1.0,0.0,0.0

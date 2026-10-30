@@ -1,0 +1,11 @@
+metric,scope,comparison,n,fp16_rate,quant_rate,delta,delta_ci_lo,delta_ci_hi,n10,n01,discordant_n,mcnemar_exact_p,holm_p,holm_significant
+HCR_strict,aggregate_all,int8_vs_fp16,500,0.642,0.622,-0.02,-0.068,0.026,76,66,142,0.45020799234923226,1.0,False
+HCR_strict,aggregate_all,nf4_vs_fp16,500,0.642,0.664,0.022,-0.026,0.068,68,79,147,0.4095804990264017,1.0,False
+HCR_no_conflict,aggregate_all,int8_vs_fp16,500,0.42,0.398,-0.022,-0.068,0.024,74,63,137,0.3929875546202088,1.0,False
+HCR_no_conflict,aggregate_all,nf4_vs_fp16,500,0.42,0.526,0.106,0.056,0.156,59,112,171,6.169035751717563e-05,0.0008019746477232832,True
+leak_after_refusal,aggregate_all,int8_vs_fp16,500,0.224,0.226,0.002,-0.044,0.048,66,67,133,1.0,1.0,False
+leak_after_refusal,aggregate_all,nf4_vs_fp16,500,0.224,0.142,-0.082,-0.126,-0.038,85,44,129,0.00038715513395483516,0.005420171875367692,True
+RR,aggregate_all,int8_vs_fp16,500,0.512,0.532,0.02,-0.026,0.066,65,75,140,0.4469896132741674,1.0,False
+RR,aggregate_all,nf4_vs_fp16,500,0.512,0.338,-0.174,-0.224,-0.126,130,43,173,2.3341251152731125e-11,3.2677751613823576e-10,True
+safety_bypass,aggregate_all,int8_vs_fp16,500,0.14,0.122,-0.018,-0.056,0.02,52,43,95,0.41191007368097665,1.0,False
+safety_bypass,aggregate_all,nf4_vs_fp16,500,0.14,0.124,-0.016,-0.058,0.024,57,49,106,0.49675439302894553,1.0,False

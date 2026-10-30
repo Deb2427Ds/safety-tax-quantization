@@ -1,0 +1,125 @@
+{
+  "full_judge_pipeline_rerun": false,
+  "generation_hardware": "not captured",
+  "generation_rerun_performed": false,
+  "historical_run_ids": [
+    {
+      "precision": "fp16",
+      "run_id": "83df7413-b836-4281-ae3a-f8434de09b1f"
+    },
+    {
+      "precision": "fp16",
+      "run_id": "run_20260530_050352"
+    },
+    {
+      "precision": "fp16",
+      "run_id": "run_20260601_043713"
+    },
+    {
+      "precision": "fp16",
+      "run_id": "run_20260721_044654"
+    },
+    {
+      "precision": "int8",
+      "run_id": "83df7413-b836-4281-ae3a-f8434de09b1f"
+    },
+    {
+      "precision": "int8",
+      "run_id": "run_20260601_043713"
+    },
+    {
+      "precision": "int8",
+      "run_id": "run_20260721_044654"
+    },
+    {
+      "precision": "nf4",
+      "run_id": "83df7413-b836-4281-ae3a-f8434de09b1f"
+    },
+    {
+      "precision": "nf4",
+      "run_id": "run_20260601_043713"
+    },
+    {
+      "precision": "nf4",
+      "run_id": "run_20260721_044654"
+    }
+  ],
+  "human_audit": {
+    "benign_rows": 39,
+    "blocked_row_count": 1,
+    "blocked_row_manual_resolution": true,
+    "harmful_rows": 640,
+    "rows": 679,
+    "status": "completed"
+  },
+  "model_family": "SmolLM2-1.7B",
+  "model_hf_id": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+  "normalized_data": {
+    "normalized_analysis_config_hash": "b30196984df53634681542294f0308b4",
+    "path": "raw_generations_smollm_normalized.csv",
+    "rows": 1890,
+    "sha256": "0a70d4bcc7ae982d8d291e3ca180d5f5ec4da347100bb064df5d5fbe842ddd1b"
+  },
+  "output_hashes": {
+    "README_SMOLLM_FINAL.md": "216c82839d85367c073ccb1d6b87235a78dabd199187065e94f4ab5628ea7b77",
+    "SMOLLM_CLAIM_CHECK_FINAL.md": "8592ff2ce3c6a8362f25294c5ae6f82eb24b58b00279b70f5c29c85216e60883",
+    "VALIDATION_REPORT_SMOLLM_FINAL.md": "607184c4553bf03c353039b0db6b0b41be7d9de7bbf6916d77bbf98060ac26aa",
+    "audit_agreement.csv": "262dc3292095fc6b5902e15e052ed97c5147ab037fc340f3b25d8e5ae94fbbba",
+    "audit_confusion_matrices.csv": "a4fa436fb20db0184febc35560bb504f3be6877c16629b09468f158372d4391e",
+    "audit_provenance.md": "ac13124287c88c564d9da3a46cfd1099680c1434b2525c48758f75b37065995f",
+    "benign_paired_stats.csv": "18be80173738e5ebd8b23e8765c790075a6ac9000b9b0922c52efc927bcd53ce",
+    "benign_summary.csv": "a20eebb7cc571a89599a8e0c6e95cc04a1e58ea2869587ae87c4631cc595f8ad",
+    "blocked_row_sensitivity.csv": "93f96e60607546a2a8463d1f19fec7a018d9d14ef5525883a006622fcfb65b7f",
+    "code/environment_snapshot.txt": "dad310402d5700e9e8f28bbbf3292a0cbcfb6409fb79466e1ffae5bce0c017f4",
+    "code/generation_run_provenance_note.txt": "ee41afd5722da4791583f22e870579a6991d252cf9d572d30eb66afda242643b",
+    "code/generation_run_provenance_note__from_outputs-smollm.txt": "ee41afd5722da4791583f22e870579a6991d252cf9d572d30eb66afda242643b",
+    "figures/benign_utility_by_precision.png": "4a0e8ec609fce138b8e6e8e7aad973d2023989e4d7d0e1df98eb2a66c3e72986",
+    "figures/delta_hcr_ci.png": "f72c5386b06872153e0575078eda4ac9996919645778cc534e74ba122dc63542",
+    "figures/hcr_by_attack_heatmap.png": "ba8c2808c5f0452196ec63b4569263a74e8cfb97b8b6a9afc2b1f1c968e2e773",
+    "figures/hcr_by_precision.png": "8ce4b407b4806e71f3da76eab060e665bc9bfd98af90d6b16671dcef075b5d7d",
+    "figures/hcr_strict_vs_no_conflict.png": "05d167efe5f9af17c5b8f86bebb5a35b643c25e9f753241591efc571f17979a4",
+    "figures/refusal_and_leak_shift.png": "8ce8044d7bfe618fe2fcd2d949494b508c9add5463bbd58d270bab12070d7ca2",
+    "generation_run_provenance.csv": "e58bff391c2a98994f06ac742eadd8c31d2ddcdcb45b3d00ff76884ebf100d9e",
+    "human_corrected_harmful_population.csv": "67e0bf6fc889a2246b5dd892a62c9532494760f31e0c25485756c502dd939635",
+    "human_corrected_metric_summary.csv": "60760f638bf20e645a96adbc210831916886d3a3df4e3a5c1c6a64b6cd1d44ad",
+    "human_corrected_safety_tax_deltas.csv": "10f080a98b2047d9da2f5281e314172a3a0c153e6a20fa144c0afd640ef4f743",
+    "human_corrected_stats_tests.csv": "70a19a2b9ac7fcbd0342e5415d40754e9332275d30df1cef10ee5f5eb2b2c2c9",
+    "judged_benign_smollm_all.csv": "7e64408738f2d34ce219c04472b87bcb4fe9f1da0366b1f47e635418fe3b8628",
+    "judged_generations_smollm_all.csv": "43ca073e6f0381f8bfcbc95329bdfc3c83d042bf0065d25b3387011205fb2e7a",
+    "judged_harmful_smollm_all.csv": "b39156ddb4e765cb1fff58e281e0d39eaf61bc14aaa3637f0e433966ffc3e1c4",
+    "raw_generations_smollm_normalized.csv": "0a70d4bcc7ae982d8d291e3ca180d5f5ec4da347100bb064df5d5fbe842ddd1b",
+    "raw_generations_smollm_source.csv": "82b9a7e0a0c2c548b51c1a33a6667271a8c815fcd70e9c00ed47a7d4479ae336",
+    "safety_tax_deltas.csv": "85ff7b4d5e9539f4e9704ded599ffd559deb5433a5e1107d74da356da1369e58",
+    "stats_tests.csv": "59b429b9187dc971ff446efc03aec052031164b28e3452b2b4b7de5c68283e13",
+    "summary_by_model_precision_attack.csv": "2043563501ebf3428ca8baa93ebc7d8b62a1e266636a25660b3f247943768402"
+  },
+  "package": "outputs_smollm_final_release",
+  "postprocessing_hardware": "CPU",
+  "source_raw": {
+    "decoding_config_hash": "db83bd20e8b04ef7520c45b3336aa808",
+    "path": "raw_generations_smollm_source.csv",
+    "rows": 1890,
+    "sha256": "82b9a7e0a0c2c548b51c1a33a6667271a8c815fcd70e9c00ed47a7d4479ae336"
+  },
+  "statistical_configuration": {
+    "alpha": 0.05,
+    "bootstrap_iterations": 10000,
+    "bootstrap_seed": 42,
+    "holm_family": "7 scopes \u00d7 2 precision comparisons = 14 tests per metric",
+    "metrics": [
+      "HCR_strict",
+      "HCR_no_conflict",
+      "leak_after_refusal",
+      "RR",
+      "safety_bypass"
+    ],
+    "pairing_benign": [
+      "canonical_base_prompt_id"
+    ],
+    "pairing_harmful": [
+      "canonical_attack_type",
+      "canonical_base_prompt_id"
+    ],
+    "significance_test": "exact two-sided McNemar"
+  }
+}

@@ -1,0 +1,9 @@
+dataset,metric,judge_label,human_0,human_1
+harmful,harmful_compliance,0,54,0
+harmful,harmful_compliance,1,0,586
+harmful,refusal,0,307,0
+harmful,refusal,1,0,333
+harmful,leak_after_refusal,0,344,4
+harmful,leak_after_refusal,1,0,292
+benign,over_refusal,0,39,0
+benign,over_refusal,1,0,0

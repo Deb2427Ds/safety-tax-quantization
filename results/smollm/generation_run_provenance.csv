@@ -1,0 +1,19 @@
+precision,canonical_attack_type,run_id,row_count,timestamp_min,timestamp_max,source_decoding_config_hash,quantization_config,dtype_actual
+fp16,dan,run_20260530_050352,100,2026-07-22T13:39:56.886878,2026-07-22T13:39:56.886878,db83bd20e8b04ef7520c45b3336aa808,,bfloat16
+fp16,direct,run_20260530_050352,100,2026-07-22T13:39:56.886878,2026-07-22T13:39:56.886878,db83bd20e8b04ef7520c45b3336aa808,,bfloat16
+fp16,hypothetical,run_20260721_044654,100,2026-07-22T13:39:56.886878,2026-07-22T13:39:56.886878,db83bd20e8b04ef7520c45b3336aa808,,bfloat16
+fp16,none,83df7413-b836-4281-ae3a-f8434de09b1f,130,2026-07-22T12:44:31.312870,2026-07-22T12:54:08.383903,db83bd20e8b04ef7520c45b3336aa808,,bfloat16
+fp16,obfuscated,run_20260601_043713,100,2026-07-22T13:39:56.886878,2026-07-22T13:39:56.886878,db83bd20e8b04ef7520c45b3336aa808,,bfloat16
+fp16,roleplay_authority,run_20260530_050352,100,2026-07-22T13:39:56.886878,2026-07-22T13:39:56.886878,db83bd20e8b04ef7520c45b3336aa808,,bfloat16
+int8,dan,run_20260721_044654,100,2026-07-22T13:39:56.886878,2026-07-22T13:39:56.886878,db83bd20e8b04ef7520c45b3336aa808,"{""compute_dtype"": ""bfloat16"", ""load_in_8bit"": true}",int8
+int8,direct,run_20260601_043713,100,2026-07-22T13:39:56.886878,2026-07-22T13:39:56.886878,db83bd20e8b04ef7520c45b3336aa808,"{""compute_dtype"": ""bfloat16"", ""load_in_8bit"": true}",int8
+int8,hypothetical,run_20260601_043713,100,2026-07-22T13:39:56.886878,2026-07-22T13:39:56.886878,db83bd20e8b04ef7520c45b3336aa808,"{""compute_dtype"": ""bfloat16"", ""load_in_8bit"": true}",int8
+int8,none,83df7413-b836-4281-ae3a-f8434de09b1f,130,2026-07-22T12:54:21.662185,2026-07-22T13:23:43.787041,db83bd20e8b04ef7520c45b3336aa808,"{""compute_dtype"": ""bfloat16"", ""load_in_8bit"": true}",int8
+int8,obfuscated,run_20260601_043713,100,2026-07-22T13:39:56.886878,2026-07-22T13:39:56.886878,db83bd20e8b04ef7520c45b3336aa808,"{""compute_dtype"": ""bfloat16"", ""load_in_8bit"": true}",int8
+int8,roleplay_authority,run_20260601_043713,100,2026-07-22T13:39:56.886878,2026-07-22T13:39:56.886878,db83bd20e8b04ef7520c45b3336aa808,"{""compute_dtype"": ""bfloat16"", ""load_in_8bit"": true}",int8
+nf4,dan,run_20260601_043713,100,2026-07-22T13:39:56.886878,2026-07-22T13:39:56.886878,db83bd20e8b04ef7520c45b3336aa808,"{""compute_dtype"": ""bfloat16"", ""double_quant"": true, ""load_in_4bit"": true, ""quant_type"": ""nf4""}",bfloat16
+nf4,direct,run_20260601_043713,100,2026-07-22T13:39:56.886878,2026-07-22T13:39:56.886878,db83bd20e8b04ef7520c45b3336aa808,"{""compute_dtype"": ""bfloat16"", ""double_quant"": true, ""load_in_4bit"": true, ""quant_type"": ""nf4""}",bfloat16
+nf4,hypothetical,run_20260601_043713,100,2026-07-22T13:39:56.886878,2026-07-22T13:39:56.886878,db83bd20e8b04ef7520c45b3336aa808,"{""compute_dtype"": ""bfloat16"", ""double_quant"": true, ""load_in_4bit"": true, ""quant_type"": ""nf4""}",bfloat16
+nf4,none,83df7413-b836-4281-ae3a-f8434de09b1f,130,2026-07-22T13:23:47.568511,2026-07-22T13:38:38.539837,db83bd20e8b04ef7520c45b3336aa808,"{""compute_dtype"": ""bfloat16"", ""double_quant"": true, ""load_in_4bit"": true, ""quant_type"": ""nf4""}",bfloat16
+nf4,obfuscated,run_20260601_043713,100,2026-07-22T13:39:56.886878,2026-07-22T13:39:56.886878,db83bd20e8b04ef7520c45b3336aa808,"{""compute_dtype"": ""bfloat16"", ""double_quant"": true, ""load_in_4bit"": true, ""quant_type"": ""nf4""}",bfloat16
+nf4,roleplay_authority,run_20260721_044654,100,2026-07-22T13:39:56.886878,2026-07-22T13:39:56.886878,db83bd20e8b04ef7520c45b3336aa808,"{""compute_dtype"": ""bfloat16"", ""double_quant"": true, ""load_in_4bit"": true, ""quant_type"": ""nf4""}",bfloat16
