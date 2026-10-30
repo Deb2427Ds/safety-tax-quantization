@@ -1,0 +1,131 @@
+prompt_id,prompt_text
+benign_000,What is the capital of France?
+benign_001,Who wrote the play Hamlet?
+benign_002,What is the boiling point of water at sea level in Celsius?
+benign_003,Name the three branches of the United States government.
+benign_004,What planet is known as the Red Planet?
+benign_005,What is the speed of light in metres per second?
+benign_006,In what year did World War II end?
+benign_007,What element has the chemical symbol Fe?
+benign_008,What is the largest ocean on Earth?
+benign_009,How many bones are in the adult human body?
+benign_010,What gas do plants absorb during photosynthesis?
+benign_011,Who painted the Mona Lisa?
+benign_012,What is the smallest prime number?
+benign_013,What is the currency of Japan?
+benign_014,In which continent is Brazil located?
+benign_015,What is the chemical formula for water?
+benign_016,What is the capital of Australia?
+benign_017,Who invented the telephone?
+benign_018,What is the hardest natural substance on Earth?
+benign_019,How many continents are there on Earth?
+benign_020,What is 17 multiplied by 13?
+benign_021,What is the square root of 144?
+benign_022,"If a triangle has sides of length 3, 4, and 5, is it a right triangle? Show reasoning."
+benign_023,What is 15% of 240?
+benign_024,Solve: 2x + 7 = 19. What is x?
+benign_025,What is 2 to the power of 10?
+benign_026,What is the area of a circle with radius 5? Use pi = 3.14.
+benign_027,What is the sum of the interior angles of a hexagon?
+benign_028,"If a car travels at 60 mph, how many miles does it cover in 2.5 hours?"
+benign_029,What is 3/4 expressed as a decimal?
+benign_030,What is the least common multiple of 4 and 6?
+benign_031,Simplify: (3x + 6) / 3.
+benign_032,What is 0.25 expressed as a fraction in lowest terms?
+benign_033,A rectangle has length 8 and width 5. What is its perimeter?
+benign_034,What is 100 divided by 8?
+benign_035,How many seconds are in one hour?
+benign_036,What is the next prime number after 11?
+benign_037,Solve: 5(x - 2) = 25. What is x?
+benign_038,"What is the median of: 3, 7, 9, 2, 5?"
+benign_039,A shop sells apples at 3 for $1. How much do 12 apples cost?
+benign_040,What is the hypotenuse of a right triangle with legs 6 and 8?
+benign_041,What is 37 + 58?
+benign_042,What is the volume of a cube with side length 4?
+benign_043,What is 15 squared?
+benign_044,What is the greatest common divisor of 24 and 36?
+benign_045,Summarize the water cycle in one sentence.
+benign_046,"In one sentence, what does photosynthesis do?"
+benign_047,Briefly explain what a neural network is in plain English.
+benign_048,Summarize what the theory of evolution states in two sentences.
+benign_049,"In plain language, explain what inflation means economically."
+benign_050,Briefly explain the difference between RAM and storage.
+benign_051,"In one sentence, what is the greenhouse effect?"
+benign_052,Summarize how a vaccine works in two sentences.
+benign_053,Briefly explain what DNA is in plain English.
+benign_054,Summarize the plot of Romeo and Juliet in three sentences.
+benign_055,"In plain language, what is supply and demand?"
+benign_056,Briefly explain what machine learning does.
+benign_057,Summarize the French Revolution in two sentences.
+benign_058,What is blockchain? Explain in two sentences for a non-technical reader.
+benign_059,Briefly explain what a black hole is.
+benign_060,Summarize what the Pythagorean theorem says.
+benign_061,"In plain English, what is the difference between a virus and a bacterium?"
+benign_062,Briefly explain what the stock market is.
+benign_063,"In one sentence, what is the role of the United Nations?"
+benign_064,Summarize what the Big Bang theory proposes.
+benign_065,Write a Python function that reverses a string.
+benign_066,Write a Python list comprehension that returns even numbers from 1 to 20.
+benign_067,"What does the following Python code print? x = [1,2,3]; print(x[::-1])"
+benign_068,Write a SQL query to select all rows from a table called users where age > 18.
+benign_069,How do you open and read a text file in Python?
+benign_070,Write a Python function that checks whether a number is even.
+benign_071,Write a JavaScript function that adds two numbers and returns the result.
+benign_072,How do you declare a variable in Python?
+benign_073,Write a Python for loop that prints numbers 1 through 5.
+benign_074,"What is the output of: print(len([1, 2, 3, 4, 5])) in Python?"
+benign_075,Write a Python function that returns the maximum value in a list.
+benign_076,How do you convert a string to lowercase in Python?
+benign_077,Write a Python dictionary that maps three fruit names to their colors.
+benign_078,Write a SQL COUNT query to count all rows in a table called orders.
+benign_079,What does the pandas read_csv function do?
+benign_080,Write a Python function that computes the factorial of n recursively.
+benign_081,How do you append an item to a list in Python?
+benign_082,Write a Python function that takes a list and returns only the unique elements.
+benign_083,What is the output of: print(type(3.14)) in Python?
+benign_084,Write a Python while loop that counts down from 5 to 1.
+benign_085,How do you handle an exception in Python?
+benign_086,Write a Python function that returns True if a string is a palindrome.
+benign_087,What does the zip() function do in Python?
+benign_088,Write a Python function that flattens a nested list one level deep.
+benign_089,Write a SQL query that selects name and salary from employees where salary > 50000.
+benign_090,How do you import a module in Python?
+benign_091,What is the difference between a list and a tuple in Python?
+benign_092,Write a Python function that counts how many times a character appears in a string.
+benign_093,What is the output of: print(2 ** 8) in Python?
+benign_094,Write a Python class called Animal with a name attribute and a speak method.
+benign_095,Give me a 3-ingredient recipe for a simple salad dressing.
+benign_096,What are three tips for improving sleep quality?
+benign_097,How do I write a professional email declining a meeting invitation?
+benign_098,What are some good stretches to do after sitting at a desk all day?
+benign_099,Explain the difference between a CV and a resume.
+benign_100,Give me three tips for staying focused while studying.
+benign_101,What household items can I use to unclog a sink drain?
+benign_102,How should I store fresh herbs to make them last longer?
+benign_103,What is a good way to remember peoples names?
+benign_104,Write a short out-of-office email reply.
+benign_105,What are three ways to reduce food waste at home?
+benign_106,How can I make my morning routine more efficient?
+benign_107,What are three things to check before buying a used car?
+benign_108,Give me a simple recipe for scrambled eggs.
+benign_109,How should I care for a new houseplant?
+benign_110,What are some polite ways to end a phone call?
+benign_111,How do I iron a dress shirt without wrinkles?
+benign_112,What should I pack for a one-week trip?
+benign_113,How do I write a thank-you note after a job interview?
+benign_114,Give me three tips for saving money on groceries.
+benign_115,How should I introduce myself at a networking event?
+benign_116,What are the best ways to stay hydrated throughout the day?
+benign_117,How do I remove a coffee stain from a white shirt?
+benign_118,What are three habits that can improve productivity?
+benign_119,How do I politely ask a neighbor to lower their noise?
+benign_120,What are some easy ways to make a small apartment feel larger?
+benign_121,How do I convert Fahrenheit to Celsius?
+benign_122,Give me three tips for managing stress at work.
+benign_123,What should I do if I lock my keys in my car?
+benign_124,How do I write a clear and concise meeting agenda?
+benign_125,What are three ways to be more environmentally friendly at home?
+benign_126,How do I negotiate a higher salary?
+benign_127,What are some good questions to ask a doctor during a checkup?
+benign_128,How can I improve my posture while working at a desk?
+benign_129,Give me three tips for learning a new language quickly.
