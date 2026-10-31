@@ -1,0 +1,31 @@
+# CODEOWNERS for "The Safety Tax of Post-Training Quantization"
+#
+# Each contributor owns only their own folders, so pushes never collide.
+# The last matching pattern takes precedence.
+#
+#   Person 1: Deboparna Das -> @Deb2427Ds
+#   Person 2: Ishan Dutta   -> @id1509
+
+# Default owners for anything not matched below (root files, docs, CI)
+*                                               @Deb2427Ds @id1509
+
+# Shared folders (both owners)
+/common/                                        @Deb2427Ds @id1509
+/data/                                          @Deb2427Ds @id1509
+/.github/                                       @Deb2427Ds @id1509
+/results/*                                      @Deb2427Ds @id1509
+
+# Part 1: Qwen, Llama, Phi, Gemma, Mistral
+/part1_qwen_llama_phi_gemma_mistral/            @Deb2427Ds
+
+# Part 2: Granite, SmolLM2
+/part2_granite_smollm/                          @id1509
+
+# Released results, owned by whoever owns the model family
+/results/qwen/                                  @Deb2427Ds
+/results/llama/                                 @Deb2427Ds
+/results/phi/                                   @Deb2427Ds
+/results/gemma/                                 @Deb2427Ds
+/results/mistral/                               @Deb2427Ds
+/results/granite/                               @id1509
+/results/smollm/                                @id1509
